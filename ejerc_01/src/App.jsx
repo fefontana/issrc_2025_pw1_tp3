@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Saludo from "./Saludo.jsx"
+import SaludoComponent from "./SaludoComponent.jsx"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,10 +10,17 @@ function App() {
   return (
     <>
       <div>
-        <Saludo nombre="Mundo" />
-        <Saludo nombre="React" />
-        <Saludo nombre="Fer" />
+
+        Ejemplo de creacion de un componente React y reutilizacion del mismo enviando tres valores distintos para la prop nombre.
+        
+        <SaludoComponent nombre="Mundo" />
+        <SaludoComponent nombre="React" />
+        <SaludoComponent nombre="Fer" />
+
       </div>
+
+
+
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

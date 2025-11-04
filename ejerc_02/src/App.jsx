@@ -9,7 +9,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <> 
+      <div className="tarjeta">     
+      {/* ... comentario react ... */}
+      {/*
       <div
         style={{
           display: "flex",
@@ -19,6 +22,7 @@ function App() {
           padding: "20px",
         }}
       >
+      */}
         <TarjetaPerfil
           nombre="Eric Heinhorn"
           edad={830}
